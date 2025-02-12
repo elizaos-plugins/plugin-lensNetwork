@@ -1,24 +1,22 @@
 {
-    "compilerOptions": {
-        "outDir": "dist",
-        "rootDir": "src",
-        "lib": ["ESNext", "dom"],
-        "module": "Preserve",
-        "moduleResolution": "Bundler",
-        "strict": false,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": false,
-        "allowImportingTsExtensions": true,
-        "declaration": true,
-        "emitDeclarationOnly": true,
-        "resolveJsonModule": true,
-        "noImplicitAny": false,
-        "allowJs": true,
-        "checkJs": false,
-        "noEmitOnError": false,
-        "moduleDetection": "force",
-        "allowArbitraryExtensions": true
-    },
-    "include": ["src/**/*.ts"]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "sourceMap": true,
+    "types": ["vitest/globals", "node", "jest"],
+    "baseUrl": ".",
+    "preserveSymlinks": true
+  },
+  "include": ["src/**/*", "test/actions/getDeploymentApi.test.ts"],
+  "exclude": ["node_modules", "dist", "test", "../../packages/core/**/*"]
 }

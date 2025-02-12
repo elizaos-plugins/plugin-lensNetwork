@@ -127,6 +127,7 @@ var require_constants = __commonJS({
 // ../../node_modules/node-gyp-build/node-gyp-build.js
 var require_node_gyp_build = __commonJS({
   "../../node_modules/node-gyp-build/node-gyp-build.js"(exports, module) {
+    "use strict";
     var fs = __require("fs");
     var path = __require("path");
     var os = __require("os");
@@ -296,6 +297,7 @@ var require_node_gyp_build = __commonJS({
 // ../../node_modules/node-gyp-build/index.js
 var require_node_gyp_build2 = __commonJS({
   "../../node_modules/node-gyp-build/index.js"(exports, module) {
+    "use strict";
     var runtimeRequire = typeof __webpack_require__ === "function" ? __non_webpack_require__ : __require;
     if (typeof runtimeRequire.addon === "function") {
       module.exports = runtimeRequire.addon.bind(runtimeRequire);
@@ -3910,4 +3912,4 @@ var WebSocket3 = (() => {
 export {
   WebSocket3 as WebSocket
 };
-//# sourceMappingURL=_esm-L4OBJJWB.js.map
+//# sourceMappingURL=_esm-GOPLUTRN.js.map
